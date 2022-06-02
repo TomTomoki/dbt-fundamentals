@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: staging payments table
+    columns:
+      - name: amount
+        description: "{{ doc('stg_payments') }}"

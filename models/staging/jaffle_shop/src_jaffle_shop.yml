@@ -6,4 +6,5 @@ sources:
     schema: jaffle_shop
     tables:
       - name: customers
+        description: Test comment.
       - name: orders
