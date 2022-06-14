@@ -11,3 +11,14 @@ One of the following values:
 | returned       | Item has been returned                           |
 
 {% enddocs %}
+
+
+{% docs test %}
+	
+One of the following values: 
+
+| status         | definition                                       |
+|----------------|--------------------------------------------------|
+| hello         | Order placed, not yet shipped                    |
+
+{% enddocs %}
