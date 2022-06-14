@@ -6,7 +6,8 @@ sources:
       schema: stripe
       tables:
         - name: payment
-          loaded_at_filed: _BATCHED_AT
+          loaded_at_field: _BATCHED_AT
           freshness:
             warn_after: {count: 12, period: hour}
-            error_after: {count: 12, period: hour}
+            error_after: {count: 1000, period: hour}
+            

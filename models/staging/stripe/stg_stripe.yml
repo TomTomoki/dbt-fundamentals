@@ -5,4 +5,4 @@ models:
     description: staging payments table
     columns:
       - name: amount
-        description: "{{ doc('stg_payments') }}"
+        description: "{{ doc('test') }}"
