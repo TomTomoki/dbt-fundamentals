@@ -1,5 +1,7 @@
 select
     ORDERID as order_id
-    , AMOUNT/100 as amount
+    , {{ cents_to_dollars('AMOUNT', 3) }} as amount
     , PAYMENTMETHOD
+    , created as collector_tstamp
 from {{ source('stripe', 'payment') }}
+{{ limit_data_in_dev(3) }}
